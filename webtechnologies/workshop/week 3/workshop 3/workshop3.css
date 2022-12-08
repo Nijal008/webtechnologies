@@ -1,0 +1,37 @@
+*{
+    margin-top: 13px;
+}
+body{background-color: rgb(194, 131, 238)  ;}
+h1 {
+    color: black;
+border:5px solid black;
+background-color: rgb(235, 130, 208);
+}#intro{
+
+    border: 3px solid rgb(72, 235, 167);
+    
+    font-size: 18px;
+    
+    }#education{
+
+        border: 3px solid rgb(238, 69, 69);
+        
+        font-size: 18px;
+        
+        }#hobbies{
+
+            border: 3px solid rgb(172, 196, 63);
+            
+            font-size: 18px;
+            
+            }#contact{
+
+                border: 3px solid rgb(52, 177, 79);
+                
+                font-size: 18px;
+                
+                }
+
+
+                .Navigation{border:3px solid rgb(229, 135, 67) ;
+                }
