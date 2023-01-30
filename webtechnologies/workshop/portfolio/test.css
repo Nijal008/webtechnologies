@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arima Madurai', cursive;
 }
-
+body{
+    background-color: black;
+    color: white;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 100px;
     padding-left: 8%;
     padding-right: 8%;
 
@@ -26,6 +29,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+
 }
 nav ul li a:hover{
     color:#f9004d;
@@ -35,28 +39,34 @@ a{
     text-decoration: none;
     
 }
-.container{
-    min-height: 100vh;
-    width: 100%;
+.container p{
     display: flex;
+    flex-direction: row;
+    width: fit-content;
     align-items: center;
     justify-content: center;
     
 }
-#ABC{
-    background-image: url(https://i.pinimg.com/236x/ad/7b/ea/ad7bea3be27e171ff336a79cd9eebf17.jpg) ;
-    background-size: cover; 
-    background-position: top center;
-    position: relative;
+.container{
+    width:100%;
+    height:100vh;
     
+
 }
 
 #ABC h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 7rem;
     position: relative;
-    color: white;
+    color: rgb(251, 247, 247);
+}
+.name{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #home{
     background-color: #f9004d;
@@ -64,9 +74,112 @@ a{
 span{
     color: #f9004d;
 }
-.container h2{
+#about .container h2{
+    writing-mode: vertical-rl;
+    justify-items: center;
+    letter-spacing:15px;
     font-size: 50px;
+    float:left;
+    margin-top: 5em;
+    margin-left: 0;
+
+}
+#about .container p{
+    position: absolute;
+    top:280%;
+    left: 50%;  
+}
+#about{
+    width:100%;
+    height:100vh;
+    color: #fff;
+}
+#about .container img{
+   width:100px;
+   height:130px;
 
 }
 
+  
+  h1 {
+    position: relative;
+    font-size: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(0, 122, 255), rgb(98, 0, 234));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius:15px;
+    animation: animate 3s linear infinite;
+    
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
 
+  }
+  .second h1{
+    animation: animatee 3s ease-in infinite; 
+  }
+  @keyframes animatee{
+    0% {
+      background-position: 500%;
+    }
+    100% {
+      background-position: -500%;
+    }
+
+  }
+
+.text-container {
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 7rem;
+  height: 100%;
+}
+
+.text-container > span {
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #FFF;
+    text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
+  }
+  
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+.text-container > span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.text-container > span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.text-container > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+.text-container > span:nth-child(5) {
+  animation-delay: 1s;
+}
+.text-container > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+.text-container > span:nth-child(7) {
+  animation-delay: 1.5s;
+}
