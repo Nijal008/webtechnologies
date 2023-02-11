@@ -70,12 +70,26 @@ a{
     position: relative;
     color: rgb(251, 247, 247);
 }
+#ABC h2{
+  font-size: 3.8rem;
+  margin-top: 50px;
+  
+}
 .name{
     width:100%;
     height:100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 100px;
+}
+@media screen and (max-width:728px){
+  #portfolio .name div h1 {
+    font-size:65px;
+    margin-top:20px;
+    padding-top: 0%;
+    padding-left: 10px;
+  }
 }
 #home{
   width:100%;
@@ -89,22 +103,83 @@ a{
 }
 #home .container p{
   top:155%;
-  position: absolute;
-  right: 60%;  
+  width:50%;
   font-size: 25px;
   font-weight: 800;
-  padding-left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:5%;
+  
+  
 }
+#home .container{
+
+  display: flex;
+  flex-direction: column;
+  
+
+}
+@media screen and (max-width:728px){
+  #home .container h2{
+    font-size: 30px;
+    margin: 10px;
+  
+  }
+  #home .container p{
+   text-shadow:0 0 10px blue;
+    padding:20px;
+    font-size: 15px;
+    width:100%;
+  }
+
+ #about .container #me
+ {
+font-size: 20px;
+ }
+ #about .container{
+  display:flex;
+  text-align:ceter;
+ }
+ #about .container #para{ 
+  font-size: 3px;
+  margin-top: 10px;
+  transition:0.3s;
+  width:220px;
+  padding:10px;
+  padding-left:40px;
+ }
+ #about .container #para:hover{
+  font-size: 13px;
+
+ }
+
+ #about{
+  margin-top: 20%;
+  background-size:cover;
+  height:70vh;
+ }
+
+ #skills .container .bar{
+ width:200%;
+ }
+ #skills{
+  background-color:gray;
+  margin-top:0;
+ }
+ #skills .container h2{
+  margin-top: 10px;
+ }
+}
+
+
 span{
     color: #f9004d;
 }
-#Hobbies {
-  padding: 50px 0;
-}
+
 
 #Hobbies h2 {
   text-align: center;
-  margin-bottom: 100px;
 }
 
 #Hobbies ul {
@@ -122,12 +197,34 @@ span{
 
 .hobbies-section {
   display: flex;
-  justify-content: space-between;
+
+  height:100vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
 }
+#listening h3{
+ margin-top: 0;
+ padding-top:0;
+}
+@media screen and (max-width:728px) {
+  .hobbies-section {
+    display: flex;
+  flex-wrap:wrap;
+  }
+  #Hobbies{
+    background-color: blueviolet;
+    padding: 10px 0;
+    height: 300vh;
+  }
+}
+.container h2{
+  margin-bottom: 0px;
+}
+
 
 .hobby-box {
   width: 100%;
-  height:580px;
   background: linear-gradient(90deg, rgb(0, 122, 255), rgb(98, 0, 234));
   border: 3px solid rgb(204, 204, 204);
   border-radius: 10px;
@@ -135,13 +232,13 @@ span{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ height: 70vh;
 }
 
 .hobby-box h3 {
-  margin-top: 24px;
   font-size: 20px;
   display: flex;
+  margin: 0;
   
 
 }
@@ -186,6 +283,12 @@ span{
     margin-left: 0;
 
 }
+
+#contact {
+  width:100%;
+  height: 100vh;
+  background-color: red;
+}
 #contact .container{
   display: flex;
   flex-direction:column;
@@ -194,29 +297,39 @@ span{
 }
 #contact h2{
  margin-bottom:140px;
+ 
 }
 
 #about .container p{
-    position: absolute;
-    top:236%;
-    left: 60%; 
     font-size: 25px;
     font-weight: 800;
-    padding-right: 90px;
+    width:50%;
+    padding-right: 13px;
+    margin-left:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #about{
+    margin-top: 10%;
     width:100%;
     height:100vh;
     color: #fff;
     background-image: url(nijal.jpg);
     background-attachment: fixed;
-    background-size: contain;
+
+    background-size:45%;
     background-repeat: no-repeat;
   }
 
 
 
-  
+
   h1 {
     position: relative;
     font-size: bold;
@@ -307,6 +420,10 @@ h2 {
   flex-direction:column;
   align-items: center;
   justify-content: center;
+  
+}
+#skills li{
+  list-style: none;
 }
 
 
@@ -402,9 +519,13 @@ h2 {
 		width: 50%;
 	}
 }
-.contact-section{
+#contact{
   background: url(https://img.freepik.com/premium-photo/sunset-himalaya-mt-amadablam-everest-base-camp-trekking-solukhumbu-nepal_723123-367.jpg?size=626&ext=jpg&ga=GA1.1.1194841117.1674976642&semt=ais) no-repeat center;
   background-size: cover;
+  height:100vh;
+
+}
+.contact-section{
   padding: 40px 0;
 }
 .contact-section h2{
